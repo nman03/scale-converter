@@ -4,19 +4,16 @@ public class EnglishToMetricConverter implements ScaleConverter {
 
 	@Override
 	public double convertTemperature(double tempIn) {
-		double tempInCel = (tempIn - 32) * (5.0 / 9);
-		return tempInCel;
+		return (tempIn - 32) * (5.0 / 9);
 	}
 
 	@Override
 	public double convertDistance(double distanceIn) {
-		double distanceInKm = distanceIn / .609;
-		return distanceInKm;
+		return distanceIn / .609;
 	}
 
 	@Override
 	public double convertWeight(double weightIn) {
-		double weightInKg = weightIn / 2.2;
-		return weightInKg;
+		return weightIn / 2.2;
 	}
 }
